@@ -1,0 +1,15 @@
+name: Make docker image and deploy to ghcr
+on: 
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  build-docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build docker image
+      working-directory: .
+      run: docker build . --file Dockerfile --tag gabor-smith/nexofox-test:latest
+    
+  
