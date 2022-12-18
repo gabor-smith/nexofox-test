@@ -1,0 +1,26 @@
+{
+  "name": "nexofox-test",
+  "version": "0.0.1",
+  "main": "dist/app.js",
+  "author": {
+    "name": "gabor-smith",
+    "email": "smith@smithworks.dev",
+    "url": "smithworks.dev"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
+    "dev": "tsc -w & nodemon dist/app.js"
+  },
+  "dependencies": {
+    "express": "~4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.17",
+    "tslint": "^6.1.3",
+    "typescript": "^4.9.4"
+  }
+}
